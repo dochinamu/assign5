@@ -18,6 +18,6 @@ message['Subject'] = '난 혜은이야'
 message['From'] = 'gpdms6420@yonsei.ac.kr'
 message['To'] = 'ksjoon28@naver.com'
 
-#3. SMTP 메일 서버로 메일 보내기
+#4. SMTP 메일 서버로 메일 보내기
 smtp.send_message(message)
 smtp.quit()

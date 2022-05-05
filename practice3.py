@@ -12,12 +12,15 @@ detected = translator.detect(book_sentence)
 
 #4. 변역을 원하는 언어를 설정하기-아랍어, 스페인어
 lang_list = ['ar', 'es']
+
+#5. 언어 번역하기
 result1 = translator.translate(book_sentence, lang_list[0])
 result2 = translator.translate(book_sentence, lang_list[1])
 result_list = [result1.text, result2.text]
+
+#6. 출력하기
 print('\n==================== 번역 결과 ====================\n')
 print('입력어- ' + detected.lang + ': ' + book_sentence)
 for i in range(len(lang_list)):
-    
     print('번역어'+ str(i+1) + '- ' + lang_list[i] + ' : ' + result_list[i])
 print('\n==================================================')
